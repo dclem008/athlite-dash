@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-border-main: var(--border);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+}
+
+/* 1. Default Theme (Neon Dark) */
+:root {
+  color-scheme: dark; /* Forces native calendar to dark mode */
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --border: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  
+  --chart-1: #10b981;
+  --chart-2: #38bdf8;
+  --chart-3: #f472b6;
+  --chart-4: #fbbf24;
+}
+
+/* 2. Theme: Standard Light */
+[data-theme='light'] {
+  color-scheme: light; /* Forces native calendar to light mode */
+  --bg: #f8fafc;       /* Off-white reduces eye strain */
+  --surface: #ffffff;  /* Pure white for the content cards */
+  --primary: #2563eb;  /* Deep blue for high contrast */
+  --primary-hover: #1d4ed8;
+  --border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  
+  /* Saturated colors so they are visible on a white background */
+  --chart-1: #2563eb; 
+  --chart-2: #db2777;
+  --chart-3: #059669;
+  --chart-4: #d97706;
+}
+
+/* 3. Theme: Standard Dark */
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #09090b;       /* Zinc 950 - True neutral dark */
+  --surface: #18181b;  /* Zinc 900 */
+  --primary: #3b82f6;  /* Bright Blue */
+  --primary-hover: #2563eb;
+  --border: #27272a;
+  --text-main: #fafafa;
+  --text-muted: #a1a1aa;
+  
+  --chart-1: #3b82f6;
+  --chart-2: #f472b6;
+  --chart-3: #34d399;
+  --chart-4: #fbbf24;
+}
+
+/* 4. Theme: Ocean Blue */
+[data-theme='ocean'] {
+  color-scheme: dark;
+  --bg: #082f49;
+  --surface: #0c4a6e;
+  --primary: #38bdf8;
+  --primary-hover: #0284c7;
+  --border: #0369a1;
+  --text-main: #f0f9ff;
+  --text-muted: #7dd3fc;
+  
+  --chart-1: #38bdf8;
+  --chart-2: #818cf8;
+  --chart-3: #34d399;
+  --chart-4: #f472b6;
+}
+
+/* 5. Theme: Volcano */
+[data-theme='volcano'] {
+  color-scheme: dark;
+  --bg: #450a0a;
+  --surface: #7f1d1d;
+  --primary: #f97316;
+  --primary-hover: #ea580c;
+  --border: #991b1b;
+  --text-main: #fff7ed;
+  --text-muted: #fdba74;
+  
+  --chart-1: #f97316;
+  --chart-2: #fbbf24;
+  --chart-3: #f43f5e;
+  --chart-4: #c084fc;
+}

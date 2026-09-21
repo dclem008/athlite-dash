@@ -1,0 +1,19 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# OS metadata
+.DS_Store
+
+# Build outputs
+dist/
+build/
+
+# Environment Variables (CRITICAL)
+.env
+.env.local
+.env.*.local

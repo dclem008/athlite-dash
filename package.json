@@ -1,0 +1,8 @@
+{
+  "name": "athlite-dash-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
